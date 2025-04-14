@@ -1,2 +1,7 @@
-// Você pode adicionar interações JS aqui no futuro
-console.log("Site da Eletrolink carregado.");
+
+ScrollReveal().reveal('section', {
+  delay: 200,
+  distance: '50px',
+  easing: 'ease-in-out',
+  origin: 'bottom'
+});
