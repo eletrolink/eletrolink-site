@@ -1,0 +1,145 @@
+/* Reset e base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to bottom, #f4f6f9, #eaf0f9);
+    color: #2c3e50;
+    padding: 0;
+  }
+  
+  /* Cabeçalho */
+  header {
+    text-align: center;
+    padding: 50px 20px 30px;
+    background: linear-gradient(to right, #003366, #005fa3);
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-bottom: 5px solid #ffcc00;
+  }
+  
+  .logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+  }
+  
+  .slogan {
+    font-size: 1.1rem;
+    color: #ffdd57;
+    margin-top: 8px;
+  }
+  
+  /* Seções */
+  section {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 20px;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #003366;
+  }
+  
+  /* Cards de serviço e projetos */
+  .servicos-grid, .projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .servico, .projeto {
+    background: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+  }
+  
+  .servico:hover, .projeto:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Formulário de contato */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px 0;
+  }
+  
+  form input, form textarea {
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-size: 1rem;
+  }
+  
+  form button {
+    background: linear-gradient(to right, #0077cc, #00aaff);
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  form button:hover {
+    background: linear-gradient(to right, #005fa3, #0099cc);
+  }
+  
+  /* Links */
+  #contato a {
+    color: #ffaa00;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  #contato a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Rodapé */
+  footer {
+    text-align: center;
+    padding: 30px;
+    font-size: 0.9rem;
+    color: #777;
+    background-color: #f1f1f1;
+    margin-top: 60px;
+  }
+  
+  /* Botão WhatsApp flutuante */
+  .whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    font-size: 26px;
+    padding: 16px;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: transform 0.3s;
+  }
+  
+  .whatsapp-float:hover {
+    transform: scale(1.1);
+  }
+  
