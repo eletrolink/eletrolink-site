@@ -155,4 +155,38 @@
     z-index: -1;
     pointer-events: none;
   }
+  /* Galeria slider */
+  #galeria {
+    max-width: 1000px;
+    margin: 60px auto;
+    text-align: center;
+  }
+  
+  .slider-js {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 350px; /* Define uma altura fixa para o slider */
+    margin: auto;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    background: #3d3d3d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .slide {
+    display: none;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Garante que a imagem caiba sem cortar */
+    border-radius: 16px;
+  }
+  
+  .slide.active {
+    display: block;
+  }
+  
   
